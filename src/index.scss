@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.App {
+  transition: all 0.5s;
+  height: 100vh;
+  color: white;
+}
+
+.libaryActive {
+  margin-left: 20%;
+}
+
+.app-container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.song-container {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  img {
+    width: 30%;
+    padding: 1rem;
+  }
+  &:hover {
+    color: black;
+  }
+}
+
+.active {
+  background-color: transparent;
+  color: black;
+}
+
+@media only screen and (max-width: 375px) {
+  html {
+    font-size: 50%;
+  }
+  .app-container {
+    width: 95%;
+  }
+}
